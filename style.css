@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.requirements {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  color: #000;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.requirements p {
+  color: #1a1a1a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form {
+  display: grid;
+  width: 600px;
+  row-gap: 20px;
+  padding-top: 20px;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #949494;
+  background: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.first {
+  grid-column: 1;
+}
+
+.second {
+  grid-column: 3;
+}
+
+.save {
+  grid-column: 2;
+  border-radius: 8px;
+  border: 2px solid #4200ff;
+  background: #4200ff;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+label {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.musted_inp-info {
+  color: #4200ff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fill {
+  color: var(--grey-aaa, #595959);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.musted_input {
+  border: 2px solid #4200ff;
+}
+
+.error {
+  border: 2px solid red;
+  color: red;
+}
+
+.warn {
+  color: red;
+}
+
+.error-btn {
+  background-color: red;
+  border-color: red;
+}

@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <center>
-      <h1>Example form</h1>
-      <div class="requirements">
-        <p class="amount">All: 12</p>
-        <p class="needed">Need: 7</p>
-        <p class="success">Success: <span class="suc">7</span>/7</p>
-        <p class="errors">Error: <span class="err">0</span>/7</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <center>
+    <h1>Example form</h1>
+    <div class="requirements">
+      <p class="amount">All: 12</p>
+      <p class="needed">Need: 7</p>
+      <p class="success">Success: <span class="suc">7</span>/7</p>
+      <p class="errors">Error: <span class="err">0</span>/7</p>
+    </div>
+  </center>
+
+  <center>
+    <form name="form">
+      <div class="first">
+        <label class="must">
+          <p class="musted_inp-info">Name</p>
+          <input type="text" name="name" class="musted_input name" id="name" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
+
+        <label>
+          <p class="inp-info">Surname</p>
+          <input type="text" name="surname" />
+        </label>
+
+        <label class="must">
+          <p class="musted_inp-info">Email</p>
+          <input type="email" name="email" class="musted_input email" id="email" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
+
+        <label>
+          <p class="inp-info">Phone number</p>
+          <input type="tel" name="phone" id="phone" />
+        </label>
+
+        <label>
+          <p class="inp-info">Your Mom’s name</p>
+          <input type="text" name="mom's name"  />
+        </label>
+
+        <label>
+          <p class="inp-info">Your Pap’s name</p>
+          <input type="text" name="pap's name"  />
+        </label>
       </div>
-    </center>
 
-    <center>
-      <form name="form">
-        <div class="first">
-            <label class="must">
-                <p class="musted_inp-info">Name</p>
-                <input type="text" name="name" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label>
-                <p class="inp-info">Surname</p>
-                <input type="text" name="surname">
-            </label>
-    
-            <label class="must">
-                <p class="musted_inp-info">Email</p>
-                <input type="email" name="email" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label>
-                <p class="inp-info">Phone number</p>
-                <input type="tel" name="phone">
-            </label>
-    
-            <label>
-                <p class="inp-info">Your Mom’s name</p>
-                <input type="text" name="mom's name">
-            </label>
-    
-            <label>
-                <p class="inp-info">Your Pap’s name</p>
-                <input type="text" name="pap's name">
-            </label>
-    
-        </div>
-        
-        <div class="second">
-            <label class="must">
-                <p class="musted_inp-info">Age</p>
-                <input type="number" name="age" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label class="must">
-                <p class="musted_inp-info">About You</p>
-                <input type="text" name="about you" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label class="must">
-                <p class="musted_inp-info">What is JavaScript?</p>
-                <input type="text" name="java" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label class="must">
-                <p class="musted_inp-info">What is HTML?</p>
-                <input type="text" name="html" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label class="must">
-                <p class="musted_inp-info">What is CSS?</p>
-                <input type="text" name="css" class="musted_input">
-                <p class="fill">Need to fill</p>
-            </label>
-    
-            <label>
-                <p class="inp-info">Your favourite car</p>
-                <input type="text" name="car">
-            </label>
-    
-        </div>
+      <div class="second">  
+        <label class="must">
+          <p class="musted_inp-info">Age</p>
+          <input type="text" name="age" class="musted_input" id="age" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
 
-        <button class="save">Save Changes</button>
+        <label class="must">
+          <p class="musted_inp-info">About You</p>
+          <input type="text" name="about you" class="musted_input" id="text"  />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
 
-      </form>
-    </center>
+        <label class="must">
+          <p class="musted_inp-info">What is JavaScript?</p>
+          <input type="text" name="java" class="musted_input"  id="text" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
 
+        <label class="must">
+          <p class="musted_inp-info">What is HTML?</p>
+          <input type="text" name="html" class="musted_input" id="text" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
 
-    <script src="script.js"></script>
-  </body>
+        <label class="must">
+          <p class="musted_inp-info">What is CSS?</p>
+          <input type="text" name="css" class="musted_input" id="text" />
+          <p class="fill">Need to fill</p>
+          <div class="div">
+            <img src="error.svg" alt="">
+          </div>
+        </label>
+
+        <label>
+          <p class="inp-info">Your favourite car</p>
+          <input type="text" name="car" />
+        </label>
+      </div>
+
+      <button class="save">Save Changes</button>
+    </form>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

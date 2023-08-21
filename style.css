@@ -42,6 +42,7 @@ input {
   background: #fff;
   margin-top: 6px;
   margin-bottom: 6px;
+  max-width: 200px;
 }
 
 .first {
@@ -60,6 +61,7 @@ input {
   padding: 10px;
   cursor: pointer;
   color: white;
+  margin-left: -50px;
 }
 
 label {
@@ -67,6 +69,17 @@ label {
   display: flex;
   flex-direction: column;
   text-align: left;
+  position: relative;
+}
+
+.div {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  translate: -50% -50%;
+  display: none;
+  opacity: 0;
+  transition: .1s ease;
 }
 
 .musted_inp-info {
@@ -101,4 +114,8 @@ label {
 .error-btn {
   background-color: red;
   border-color: red;
+}
+
+.error-logo {
+  display: none;
 }
